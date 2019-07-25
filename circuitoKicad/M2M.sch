@@ -1,0 +1,627 @@
+EESchema Schematic File Version 4
+LIBS:ShieldEduIfspSTM32-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 3
+Title "SHIELD EDU IFSP STM32"
+Date "2019-07-25"
+Rev "1.5"
+Comp "SHIELD EDU"
+Comment1 "ATENÇÃO há pinos com Tolerância a 5V no entendo não TODOS "
+Comment2 "Pedro Igor Borçatti da Silva"
+Comment3 "Rogerio Daniel Dantas"
+Comment4 ""
+$EndDescr
+$Comp
+L Memory_EEPROM:M24C01-FMN U?
+U 1 1 5D4C1C33
+P 9750 2200
+AR Path="/5D4C1C33" Ref="U?"  Part="1" 
+AR Path="/5D49BDAC/5D4C1C33" Ref="U8"  Part="1" 
+F 0 "U8" H 9500 2450 50  0000 C CNN
+F 1 "M24CXX" H 9900 2450 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 9750 2550 50  0001 C CNN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/b0/d8/50/40/5a/85/49/6f/DM00071904.pdf/files/DM00071904.pdf/jcr:content/translations/en.DM00071904.pdf" H 9800 1700 50  0001 C CNN
+	1    9750 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 3050 6600 2100
+Wire Wire Line
+	6600 2100 6750 2100
+NoConn ~ 7750 2000
+NoConn ~ 7750 2100
+Wire Wire Line
+	7800 2300 7750 2300
+Wire Wire Line
+	7800 2200 7750 2200
+Connection ~ 9300 2100
+Wire Wire Line
+	9300 2100 9350 2100
+Connection ~ 9100 2200
+Wire Wire Line
+	9100 2200 9350 2200
+Connection ~ 8900 2300
+Wire Wire Line
+	8900 2300 9350 2300
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5D4C1CBF
+P 8900 1300
+AR Path="/5D4C1CBF" Ref="#PWR?"  Part="1" 
+AR Path="/5D49BDAC/5D4C1CBF" Ref="#PWR044"  Part="1" 
+F 0 "#PWR044" H 8900 1150 50  0001 C CNN
+F 1 "+3V3" V 8900 1550 50  0000 C CNN
+F 2 "" H 8900 1300 50  0001 C CNN
+F 3 "" H 8900 1300 50  0001 C CNN
+	1    8900 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 2450 9300 2100
+Wire Wire Line
+	9100 2450 9100 2200
+Wire Wire Line
+	8900 2450 8900 2300
+Wire Wire Line
+	10650 2100 10250 2100
+Wire Wire Line
+	10650 2200 10450 2200
+$Comp
+L Jumper:Jumper_2_Open JP?
+U 1 1 5D4C1CD2
+P 8900 2650
+AR Path="/5D4C1CD2" Ref="JP?"  Part="1" 
+AR Path="/5D49BDAC/5D4C1CD2" Ref="JP3"  Part="1" 
+F 0 "JP3" H 9150 2700 50  0000 R CNN
+F 1 "~E2" H 8800 2700 50  0000 R CNN
+F 2 "MyFootprint:jumpHandSolder" H 8900 2650 50  0001 C CNN
+F 3 "~" H 8900 2650 50  0001 C CNN
+	1    8900 2650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8900 1450 9100 1450
+Wire Wire Line
+	9750 1450 9750 1900
+Connection ~ 9100 1450
+Wire Wire Line
+	9100 1450 9300 1450
+Connection ~ 9300 1450
+Wire Wire Line
+	9300 1450 9750 1450
+$Comp
+L Jumper:Jumper_2_Open JP?
+U 1 1 5D4C1CE1
+P 9100 2650
+AR Path="/5D4C1CE1" Ref="JP?"  Part="1" 
+AR Path="/5D49BDAC/5D4C1CE1" Ref="JP4"  Part="1" 
+F 0 "JP4" H 9350 2700 50  0000 R CNN
+F 1 "~E1" H 9000 2700 50  0000 R CNN
+F 2 "MyFootprint:jumpHandSolder" H 9100 2650 50  0001 C CNN
+F 3 "~" H 9100 2650 50  0001 C CNN
+	1    9100 2650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Jumper:Jumper_2_Open JP?
+U 1 1 5D4C1CE7
+P 9300 2650
+AR Path="/5D4C1CE7" Ref="JP?"  Part="1" 
+AR Path="/5D49BDAC/5D4C1CE7" Ref="JP5"  Part="1" 
+F 0 "JP5" H 9550 2700 50  0000 R CNN
+F 1 "~E0" H 9200 2700 50  0000 R CNN
+F 2 "MyFootprint:jumpHandSolder" H 9300 2650 50  0001 C CNN
+F 3 "~" H 9300 2650 50  0001 C CNN
+	1    9300 2650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8900 2850 8900 3000
+Wire Wire Line
+	9300 2850 9300 3000
+Wire Wire Line
+	9300 3000 9750 3000
+Connection ~ 9300 3000
+Wire Wire Line
+	9750 2500 9750 3000
+Wire Wire Line
+	8900 1300 8900 1450
+Connection ~ 8900 1450
+Wire Wire Line
+	9100 2850 9100 3000
+Connection ~ 9100 3000
+Wire Wire Line
+	9300 3000 9100 3000
+Wire Wire Line
+	8900 3000 9100 3000
+$Comp
+L power:Earth #PWR?
+U 1 1 5D4C1D08
+P 9100 3100
+AR Path="/5D4C1D08" Ref="#PWR?"  Part="1" 
+AR Path="/5D49BDAC/5D4C1D08" Ref="#PWR045"  Part="1" 
+F 0 "#PWR045" H 9100 2850 50  0001 C CNN
+F 1 "Earth" H 9100 2950 50  0001 C CNN
+F 2 "" H 9100 3100 50  0001 C CNN
+F 3 "~" H 9100 3100 50  0001 C CNN
+	1    9100 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 3100 9100 3000
+Text HLabel 7800 2200 2    59   Input ~ 0
+TXD1A
+Text HLabel 10650 2200 2    59   UnSpc ~ 0
+SCL1
+Text HLabel 10650 2100 2    59   BiDi ~ 0
+SDA1
+Text HLabel 7800 2300 2    59   Output ~ 0
+RXD1A
+$Comp
+L power:Earth #PWR?
+U 1 1 5D4C1D0F
+P 6600 3050
+AR Path="/5D4C1D0F" Ref="#PWR?"  Part="1" 
+AR Path="/5D49BDAC/5D4C1D0F" Ref="#PWR037"  Part="1" 
+F 0 "#PWR037" H 6600 2800 50  0001 C CNN
+F 1 "Earth" H 6600 2900 50  0001 C CNN
+F 2 "" H 6600 3050 50  0001 C CNN
+F 3 "~" H 6600 3050 50  0001 C CNN
+	1    6600 3050
+	1    0    0    -1  
+$EndComp
+Text HLabel 6500 2300 0    59   Input ~ 0
+WCLT
+Wire Wire Line
+	6500 2300 6750 2300
+Text Notes 3450 750  0    59   ~ 12
+M2M Interna
+$Comp
+L Device:R R19
+U 1 1 5D2E336C
+P 9300 1750
+F 0 "R19" V 9400 1700 50  0000 L CNN
+F 1 "100K" V 9300 1650 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9230 1750 50  0001 C CNN
+F 3 "~" H 9300 1750 50  0001 C CNN
+	1    9300 1750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R18
+U 1 1 5D2E36B2
+P 9100 1750
+F 0 "R18" V 9200 1700 50  0000 L CNN
+F 1 "100K" V 9100 1650 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9030 1750 50  0001 C CNN
+F 3 "~" H 9100 1750 50  0001 C CNN
+	1    9100 1750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R17
+U 1 1 5D2E39C4
+P 8900 1750
+F 0 "R17" V 9000 1700 50  0000 L CNN
+F 1 "100K" V 8900 1650 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8830 1750 50  0001 C CNN
+F 3 "~" H 8900 1750 50  0001 C CNN
+	1    8900 1750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 1450 8900 1600
+Wire Wire Line
+	8900 1900 8900 2300
+Wire Wire Line
+	9100 1900 9100 2200
+Wire Wire Line
+	9100 1450 9100 1600
+Wire Wire Line
+	9300 1450 9300 1600
+Wire Wire Line
+	9300 1900 9300 2100
+$Comp
+L Device:R R20
+U 1 1 5D33E674
+P 10250 1750
+F 0 "R20" V 10350 1700 50  0000 L CNN
+F 1 "4k7" V 10250 1700 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 10180 1750 50  0001 C CNN
+F 3 "~" H 10250 1750 50  0001 C CNN
+	1    10250 1750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R21
+U 1 1 5D33F11C
+P 10450 1750
+F 0 "R21" V 10550 1700 50  0000 L CNN
+F 1 "4k7" V 10450 1700 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 10380 1750 50  0001 C CNN
+F 3 "~" H 10450 1750 50  0001 C CNN
+	1    10450 1750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10250 1600 10250 1450
+Wire Wire Line
+	10250 1450 9750 1450
+Connection ~ 9750 1450
+Wire Wire Line
+	10450 1600 10450 1450
+Wire Wire Line
+	10450 1450 10250 1450
+Connection ~ 10250 1450
+Wire Wire Line
+	10250 1900 10250 2100
+Connection ~ 10250 2100
+Wire Wire Line
+	10250 2100 10150 2100
+Wire Wire Line
+	10450 1900 10450 2200
+Connection ~ 10450 2200
+Wire Wire Line
+	10450 2200 10150 2200
+Wire Wire Line
+	10150 2300 10300 2300
+Wire Wire Line
+	10300 3000 9750 3000
+Connection ~ 9750 3000
+Wire Notes Line
+	11050 750  11050 3450
+Text HLabel 6500 2200 0    59   Input ~ 0
+RST
+Wire Wire Line
+	6500 2200 6750 2200
+Wire Wire Line
+	6600 2000 6750 2000
+$Comp
+L Transistor_Array:ULN2803A U?
+U 1 1 5D58D6F6
+P 1650 2200
+AR Path="/5D58D6F6" Ref="U?"  Part="1" 
+AR Path="/5D49BDAC/5D58D6F6" Ref="U6"  Part="1" 
+F 0 "U6" H 1650 2767 50  0000 C CNN
+F 1 "ULN2803A" H 1650 2676 50  0000 C CNN
+F 2 "Package_SO:SOIC-18W_7.5x11.6mm_P1.27mm" H 1700 1550 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/uln2803a.pdf" H 1750 2000 50  0001 C CNN
+	1    1650 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R14
+U 1 1 5D5946C7
+P 2850 1700
+F 0 "R14" V 2950 1650 50  0000 L CNN
+F 1 "100K" V 2850 1600 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2780 1700 50  0001 C CNN
+F 3 "~" H 2850 1700 50  0001 C CNN
+	1    2850 1700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R13
+U 1 1 5D59599F
+P 2650 1700
+F 0 "R13" V 2750 1650 50  0000 L CNN
+F 1 "100K" V 2650 1600 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2580 1700 50  0001 C CNN
+F 3 "~" H 2650 1700 50  0001 C CNN
+	1    2650 1700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R12
+U 1 1 5D595C31
+P 2450 1700
+F 0 "R12" V 2550 1650 50  0000 L CNN
+F 1 "100K" V 2450 1600 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2380 1700 50  0001 C CNN
+F 3 "~" H 2450 1700 50  0001 C CNN
+	1    2450 1700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 5D595EF7
+P 2250 1700
+F 0 "R11" V 2350 1650 50  0000 L CNN
+F 1 "100K" V 2250 1600 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2180 1700 50  0001 C CNN
+F 3 "~" H 2250 1700 50  0001 C CNN
+	1    2250 1700
+	-1   0    0    -1  
+$EndComp
+Text HLabel 1100 2400 0    59   Output ~ 0
+IN1M
+Wire Wire Line
+	2900 2000 2050 2000
+Wire Wire Line
+	2100 1500 2100 1900
+Wire Wire Line
+	2100 1900 2050 1900
+$Comp
+L power:VCC #PWR038
+U 1 1 5D5F2BCE
+P 2100 1250
+F 0 "#PWR038" H 2100 1100 50  0001 C CNN
+F 1 "VCC" V 2100 1450 50  0000 C CNN
+F 2 "" H 2100 1250 50  0001 C CNN
+F 3 "" H 2100 1250 50  0001 C CNN
+	1    2100 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 2700 2850 2700
+Wire Wire Line
+	2050 2600 2650 2600
+Wire Wire Line
+	2900 2500 2450 2500
+Text HLabel 1100 2500 0    59   Output ~ 0
+IN2M
+Text HLabel 1100 2600 0    59   Output ~ 0
+IN3M
+Text HLabel 1100 2700 0    59   Output ~ 0
+IN4M
+Wire Wire Line
+	2050 2100 2900 2100
+Wire Wire Line
+	2900 2200 2050 2200
+Wire Wire Line
+	2050 2300 2900 2300
+Text HLabel 1100 2000 0    59   Input ~ 0
+OUT1M
+Text HLabel 1100 2100 0    59   Input ~ 0
+OUT2M
+Text HLabel 1100 2200 0    59   Input ~ 0
+OUT3M
+Text HLabel 1100 2300 0    59   Input ~ 0
+OUT4M
+$Comp
+L power:Earth #PWR?
+U 1 1 5D64A847
+P 1650 3050
+AR Path="/5D64A847" Ref="#PWR?"  Part="1" 
+AR Path="/5D49BDAC/5D64A847" Ref="#PWR039"  Part="1" 
+F 0 "#PWR039" H 1650 2800 50  0001 C CNN
+F 1 "Earth" H 1650 2900 50  0001 C CNN
+F 2 "" H 1650 3050 50  0001 C CNN
+F 3 "~" H 1650 3050 50  0001 C CNN
+	1    1650 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 3050 1650 2900
+$Comp
+L ShieldEduIfspSTM32-rescue:RFM95W-915S2-RF_Module U?
+U 1 1 5D709826
+P 4600 2100
+AR Path="/5D709826" Ref="U?"  Part="1" 
+AR Path="/5D49BDAC/5D709826" Ref="U4"  Part="1" 
+F 0 "U4" H 4250 2550 50  0000 C CNN
+F 1 "RFM95W-915S2" H 4900 2550 50  0000 C CNN
+F 2 "RF_Module:HOPERF_RFM9XW_SMD" H 1300 3750 50  0001 C CNN
+F 3 "https://www.hoperf.com/data/upload/portal/20181127/5bfcbea20e9ef.pdf" H 1300 3750 50  0001 C CNN
+	1    4600 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 2700 4700 2800
+Wire Wire Line
+	4700 2800 4600 2800
+Wire Wire Line
+	4500 2800 4500 2700
+Wire Wire Line
+	4600 2700 4600 2800
+Connection ~ 4600 2800
+Wire Wire Line
+	4600 2800 4500 2800
+NoConn ~ 5100 2000
+NoConn ~ 5100 2100
+NoConn ~ 5100 2200
+NoConn ~ 5100 2300
+NoConn ~ 5100 2400
+NoConn ~ 5100 2500
+Text HLabel 4000 2100 0    59   Input ~ 0
+RCLT
+Wire Wire Line
+	4000 2300 4100 2300
+$Comp
+L Device:Antenna_Shield AE1
+U 1 1 5D75CAD5
+P 5300 1150
+F 0 "AE1" H 5444 1143 50  0000 L CNN
+F 1 "Antenna_Shield" H 5444 1098 50  0001 L CNN
+F 2 "MyFootprint:rf SMA 90°-2" H 5300 1250 50  0001 C CNN
+F 3 "~" H 5300 1250 50  0001 C CNN
+	1    5300 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 1800 5300 1800
+Wire Wire Line
+	5300 1800 5300 1350
+Wire Wire Line
+	5400 1350 5400 2800
+Wire Wire Line
+	5400 2800 4700 2800
+Connection ~ 4700 2800
+$Comp
+L power:Earth #PWR?
+U 1 1 5D76DE6D
+P 4600 3100
+AR Path="/5D76DE6D" Ref="#PWR?"  Part="1" 
+AR Path="/5D49BDAC/5D76DE6D" Ref="#PWR034"  Part="1" 
+F 0 "#PWR034" H 4600 2850 50  0001 C CNN
+F 1 "Earth" H 4600 2950 50  0001 C CNN
+F 2 "" H 4600 3100 50  0001 C CNN
+F 3 "~" H 4600 3100 50  0001 C CNN
+	1    4600 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 3100 4600 2800
+Text HLabel 4000 1900 0    59   BiDi ~ 0
+MOSI1
+Text HLabel 4000 2000 0    59   BiDi ~ 0
+MISO1
+Text HLabel 4000 1800 0    59   UnSpc ~ 0
+SCK1
+Wire Wire Line
+	4000 2100 4100 2100
+Wire Wire Line
+	4000 1800 4100 1800
+Wire Wire Line
+	4000 2000 4100 2000
+Wire Wire Line
+	4000 1900 4100 1900
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5D7B475C
+P 4600 1250
+AR Path="/5D7B475C" Ref="#PWR?"  Part="1" 
+AR Path="/5D49BDAC/5D7B475C" Ref="#PWR033"  Part="1" 
+F 0 "#PWR033" H 4600 1100 50  0001 C CNN
+F 1 "+3V3" V 4600 1500 50  0000 C CNN
+F 2 "" H 4600 1250 50  0001 C CNN
+F 3 "" H 4600 1250 50  0001 C CNN
+	1    4600 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 1250 4600 1600
+Text Notes 650  700  0    59   ~ 12
+Driver de entrada e saída para alta potência 
+Wire Notes Line
+	3450 750  3450 3450
+Wire Notes Line
+	3450 750  11050 750 
+Wire Wire Line
+	10300 2300 10300 3000
+$Comp
+L MyLib-ALL:ESP01 U?
+U 1 1 5D4C1C39
+P 7250 2850
+AR Path="/5D4C1C39" Ref="U?"  Part="1" 
+AR Path="/5D49BDAC/5D4C1C39" Ref="U5"  Part="1" 
+F 0 "U5" H 6950 3800 50  0000 C CNN
+F 1 "ESP01" H 7450 3800 50  0000 C CNN
+F 2 "MyFootprint:ESP01" H 7250 2850 50  0001 C CIN
+F 3 "" H 7250 2850 50  0000 C CNN
+	1    7250 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 2000 6600 1200
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5D4C1C87
+P 6600 1200
+AR Path="/5D4C1C87" Ref="#PWR?"  Part="1" 
+AR Path="/5D49BDAC/5D4C1C87" Ref="#PWR036"  Part="1" 
+F 0 "#PWR036" H 6600 1050 50  0001 C CNN
+F 1 "+3V3" V 6600 1450 50  0000 C CNN
+F 2 "" H 6600 1200 50  0001 C CNN
+F 3 "" H 6600 1200 50  0001 C CNN
+	1    6600 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 1850 2250 2400
+Wire Wire Line
+	2050 2400 2250 2400
+Connection ~ 2250 2400
+Wire Wire Line
+	2250 2400 2900 2400
+Wire Wire Line
+	2850 1850 2850 2700
+Connection ~ 2850 2700
+Wire Wire Line
+	2850 2700 2050 2700
+Wire Wire Line
+	2650 1850 2650 2600
+Connection ~ 2650 2600
+Wire Wire Line
+	2650 2600 2900 2600
+Wire Wire Line
+	2450 1850 2450 2500
+Connection ~ 2450 2500
+Wire Wire Line
+	2450 2500 2050 2500
+Wire Wire Line
+	2100 1500 2250 1500
+Wire Wire Line
+	2850 1500 2850 1550
+Connection ~ 2100 1500
+Wire Wire Line
+	2650 1550 2650 1500
+Connection ~ 2650 1500
+Wire Wire Line
+	2650 1500 2850 1500
+Wire Wire Line
+	2450 1550 2450 1500
+Connection ~ 2450 1500
+Wire Wire Line
+	2450 1500 2650 1500
+Wire Wire Line
+	2250 1550 2250 1500
+Connection ~ 2250 1500
+Wire Wire Line
+	2250 1500 2450 1500
+Wire Wire Line
+	1100 2000 1250 2000
+Wire Wire Line
+	1250 2100 1100 2100
+Wire Wire Line
+	1100 2200 1250 2200
+Wire Wire Line
+	1250 2300 1100 2300
+Wire Wire Line
+	1100 2400 1250 2400
+Wire Wire Line
+	1250 2500 1100 2500
+Wire Wire Line
+	1100 2600 1250 2600
+Wire Wire Line
+	1250 2700 1100 2700
+Text HLabel 2900 2400 2    59   Input ~ 0
+IN1
+Text HLabel 2900 2500 2    59   Input ~ 0
+IN2
+Text HLabel 2900 2600 2    59   Input ~ 0
+IN3
+Text HLabel 2900 2700 2    59   Input ~ 0
+IN4
+Text HLabel 2900 2000 2    59   Output ~ 0
+OUT1
+Text HLabel 2900 2100 2    59   Output ~ 0
+OUT2
+Text HLabel 2900 2200 2    59   Output ~ 0
+OUT3
+Text HLabel 2900 2300 2    59   Output ~ 0
+OUT4
+Wire Notes Line
+	650  750  3300 750 
+Wire Notes Line
+	650  750  650  3450
+Wire Notes Line
+	3300 3450 3300 750 
+Wire Wire Line
+	2100 1250 2100 1500
+Wire Notes Line
+	650  3450 3300 3450
+Wire Notes Line
+	3450 3450 11050 3450
+Text HLabel 4000 2300 0    59   Input ~ 0
+RST
+Text Notes 700  3400 0    47   ~ 0
+Todos os OUTPUTS chaveiam para GROUD e Suportam 50V/500mA\nTodos os INPUTS suportam 30V e estão com PULL-PU em VCC, não \nutilizar sinal de tensão acima de VCC\n
+Text Notes 3500 3400 0    47   ~ 0
+RCLT é o pino de controle do RFM95W e é diferente do nativo da SPI1 isso garante comunicação em barramento\nWCLT é o ENABLE do ESP01 e faz trabalho que RCLT\n
+Text Notes 8500 3400 0    47   ~ 0
+A EEPROM está ligada diretamente no I2C e contém os PULL-UP em \nSDA e SCL,  seu endereço é controlado pelos jumper E0, E1 e E2
+$EndSCHEMATC
