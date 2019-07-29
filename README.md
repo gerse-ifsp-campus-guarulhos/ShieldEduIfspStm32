@@ -30,6 +30,6 @@ Na pasta [PCB](PCB/) estão os arquivos para fabricação da placa, tanto o [GER
    * Bluetooth ajustado na PCB (restava trombando com o blue pill).
 
 
-# Vizual aproximado do circuito:
+# Visual aproximado do circuito:
 ![3D do PCB com componentes](outros/pcp1.jpg)
 ![3D do PCB sem componentes ](outros/pcp.jpg)
