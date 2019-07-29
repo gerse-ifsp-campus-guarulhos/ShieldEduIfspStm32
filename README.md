@@ -26,7 +26,8 @@ Na pasta [PCB](PCB/) estão os arquivos para fabricação da placa, tanto o [GER
 
 # Notas de versão
  * REV160
-   * Removido seletor VCOM das saidas modulares (agora apenas 5V exceto SPI)
+   * Removido seletor VCOM das saidas modulares (agora apenas 5V exceto SPI).
+   * Bluetooth ajustado na PCB (restava trombando com o blue pill).
 
 
 # Vizual aproximado do circuito:
