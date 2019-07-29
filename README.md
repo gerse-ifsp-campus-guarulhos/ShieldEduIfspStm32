@@ -24,6 +24,11 @@ Neste Repositório se encontra todos os arquivos necessários para o **DESENVOLV
 
 Na pasta [PCB](PCB/) estão os arquivos para fabricação da placa, tanto o [GERBER](PCB/) para fabricação manufaturada. Em [Documentação](Documentação/) temos os arquivos referente as informações e manuais do circuito criadas até o momento, como o  [esquema elétrico](Documentação/ShieldEduIfspStm32.pdf).  Em [circuitoKicad](circuitoKicad/) temos os arkivos edivaves do projeto  (desenvolvido no [kicad EDA 5.0.2](http://www.kicad-pcb.org/)) suas dependências (exceto os pacotes 3D da PCB).
 
+# Notas de versão
+ * REV160
+  * Removido seletor VCOM das saidas modulares (agora apenas 5V exceto SPI)
+
+
 # Vizual aproximado do circuito:
 ![3D do PCB com componentes](outros/pcp1.jpg)
 ![3D do PCB sem componentes ](outros/pcp.jpg)
