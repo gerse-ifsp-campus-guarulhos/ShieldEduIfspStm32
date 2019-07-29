@@ -1,4 +1,4 @@
-update=qui 25 jul 2019 16:36:09 -03
+update=seg 29 jul 2019 09:27:19 -03
 version=1
 last_client=kicad
 [general]
