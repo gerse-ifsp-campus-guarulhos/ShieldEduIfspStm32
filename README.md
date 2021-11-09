@@ -22,7 +22,7 @@ O SHIELD EDU IFSP STM32 é uma placa didática criada para a [blue pill](https:/
 
 Neste Repositório se encontra todos os arquivos necessários para o **DESENVOLVIMENTO e DOCUMENTAÇÃO** para a **SHIELD EDU IFSP STM32**, esse projeto encontra se em desenvolvimento.
 
-Na pasta [PCB](PCB/) estão os arquivos para fabricação da placa, tanto o [GERBER](PCB/) para fabricação manufaturada. Em [Documentação](Documentação/) temos os arquivos referente as informações e manuais do circuito criadas até o momento, como o  [esquema elétrico](Documentação/ShieldEduIfspStm32.pdf).  Em [circuitoKicad](circuitoKicad/) temos os arkivos edivaves do projeto  (desenvolvido no [kicad EDA 5.0.2](http://www.kicad-pcb.org/)) suas dependências (exceto os pacotes 3D da PCB).
+Na pasta [PCB](PCB/) estão os arquivos para fabricação da placa, tanto o [GERBER](PCB/) para fabricação manufaturada. Em [Documentação](Documentação/) temos os arquivos referente as informações e manuais do circuito criadas até o momento, como o  [esquema elétrico](Documentação/ShieldEduIfspStm32.pdf).  Em [circuitoKicad](circuitoKicad/) temos os arkivos edivaves do projeto  (desenvolvido no [kicad EDA 5.0.2](http://www.kicad.org/)) suas dependências (exceto os pacotes 3D da PCB).
 
 # Notas de versão
  * REV160
